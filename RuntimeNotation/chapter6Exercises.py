@@ -100,3 +100,13 @@ def appendToNew(array, value):
     return bigger
 
 # Runtime of O(n^2)
+
+# 10
+def sumDigits(n):
+    sum = 0
+    while n > 0:
+        sum += n % 10
+        n /= 10
+    return sum
+
+# Runtime is O(log N)
